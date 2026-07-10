@@ -22,7 +22,11 @@ Langcraft Speech API analyzes spoken audio and returns structured data for pronu
 
 ## Quick start
 
-Request access and create an API key, then submit a multipart request:
+### Access
+
+API documentation, request examples, and response details are public. API access is currently available by request: Langcraft does not offer public self-service API accounts or dashboard sign-up. To request access or discuss an integration, contact [hello@langcraft.world](mailto:hello@langcraft.world). Approved users receive setup instructions and credentials directly from Langcraft.
+
+Once you have received API credentials, submit a multipart request:
 
 ```bash
 export LANGCRAFT_API_KEY="your_api_key"
@@ -51,7 +55,7 @@ Supported audio formats: WAV, M4A, FLAC, MP3, OGG, and WEBM.
 
 ## Read the response
 
-The API returns one JSON object. This abridged example shows the fields most applications use first:
+The API returns one JSON object. This abridged example shows the fields most appliations use first:
 
 ```json
 {
@@ -91,7 +95,7 @@ Use `summary` for an utterance-level overview, `word_groups` for learner-facing 
 - [Product and access request](https://platform.langcraft.world/)
 - [Getting started guide](https://docs.langcraft.world/quickstart)
 - [Output reference](https://docs.langcraft.world/output)
-- [Supported languages and dialects](https://docs.langcraft.world/dialects)
+- [Supported languages and dialects](https://docs.langcraft/dialects)
 - [Full API documentation](https://docs.langcraft.world/)
 
 Questions? Contact [hello@langcraft.world](mailto:hello@langcraft.world).
@@ -99,4 +103,3 @@ Questions? Contact [hello@langcraft.world](mailto:hello@langcraft.world).
 ## Notes
 
 This repository provides integration guidance for Langcraft. For production use, always consult the current API documentation for the latest supported languages, request options, access terms, and limits.
-

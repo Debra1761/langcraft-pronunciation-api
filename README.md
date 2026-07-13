@@ -31,14 +31,7 @@ Once you have received API credentials, submit a multipart request:
 ```bash
 export LANGCRAFT_API_KEY="your_api_key"
 
-curl -s -X POST https://api.langcraft.world/v1/speech/analyze \
-  -H "x-api-key: $LANGCRAFT_API_KEY" \
-  -F "audio=@speech.wav" \
-  -F "reference_text=I can do it tomorrow." \
-  -F "lang=en" \
-  -F "dialect=en-us" \
-  -F "enable_prosody_contours=true" \
-  -F "enable_proficiency_metrics=true"
+curl -s -X POST https://api.langcraft.world/v1/speech/analyze \  -H "x-api-key: $LANGCRAFT_API_KEY" \  -F "audio=@speech.wav" \  -F "reference_text=I can do it tomorrow." \  -F "lang=en" \  -F "dialect=en-us" \  -F "enable_prosody_contours=true" \  -F "enable_proficiency_metrics=true"
 ```
 
 Supported audio formats: WAV, M4A, FLAC, MP3, OGG, and WEBM.
@@ -97,6 +90,7 @@ Use `summary` for an utterance-level overview, `word_groups` for learner-facing 
 - [Output reference](https://docs.langcraft.world/output)
 - [Supported languages and dialects](https://docs.langcraft/dialects)
 - [Full API documentation](https://docs.langcraft.world/)
+- [Public Postman collection and live examples](https://documenter.getpostman.com/view/56546278/2sBY4LT2vs)
 
 Questions? Contact [hello@langcraft.world](mailto:hello@langcraft.world).
 
